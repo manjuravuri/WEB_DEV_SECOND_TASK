@@ -1,0 +1,238 @@
+<html>
+    <head>
+        <style>
+            .container{
+                width:470px;
+                height:470px;
+                margin-top:7em;
+                margin-left:33em;
+                border-color:black;
+                border-width: 3px;
+                background-image: url("https://images.ctfassets.net/co0pvta7hzrh/U7naGAUU8AroSP7R3koHv/7a4c8ab3868f74bb197c1069401aac26/pre-registration_form_template_Thumbnail.png");
+                border-radius:15px;
+            }
+            #fullname,#mobileno,#email,#adress{ 
+                font-size:23px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            #fullname{
+                padding-top:2em;
+                margin-left:1.25em;
+            }
+            #mobileno{
+                margin-left:1.25em;
+                margin-top:1.5em;
+            }
+            #email{
+                margin-left:1.25em;
+            }
+            #adress{
+                margin-left:1.25em;
+                margin-top:2em;
+            }
+            body{
+                background-color:pink;
+            }
+            #userinput{
+                margin-left:9em;
+                margin-top:-3em;
+                height:40px;
+                width:250px;
+                border-radius:10px;
+                font-size:17px;
+            }
+            #mobileinput{
+                margin-left:9em;
+                margin-top:-3em;
+                height:40px;
+                width:250px;
+                border-radius:10px;
+                font-size:17px;
+            }
+            #emailinput{
+                margin-left:9em;
+                margin-top:-3em;
+                height:40px;
+                width:250px;
+                border-radius:10px;
+                font-size:17px;
+            }
+            #adressinput{
+                margin-left:9em;
+                margin-top:-3em;
+                height:40px;
+                width:250px;
+                border-radius:10px;
+                font-size:17px;
+            }
+            #adressinput:hover{
+                border-bottom: 3px;
+                border-style:solid;
+                border-color: black;
+                border-top:none;
+                border-left:none;
+                border-right:none;
+                border-width:4px;
+            }
+            #emailinput:hover{
+                border-bottom: 3px;
+                border-style:solid;
+                border-color: black;
+                border-top:none;
+                border-left:none;
+                border-right:none;
+                border-width:4px;
+            }
+            #userinput:hover{
+                border-bottom: 3px;
+                border-style:solid;
+                border-color: black;
+                border-top:none;
+                border-left:none;
+                border-right:none;
+                border-width:4px;
+            }
+            #mobileinput:hover{
+                border-bottom: 3px;
+                border-style:solid;
+                border-color: black;
+                border-top:none;
+                border-left:none;
+                border-right:none;
+                border-width:4px;
+            }
+            #submit{
+                width:96px;
+                height:40px;
+                margin-top:2.4em;
+                margin-left:16.7em;
+                font-size:20px;
+                background: linear-gradient(45deg,green,skyblue,orange);
+                border-radius:3px;
+                cursor: pointer;
+                color: black;
+                font-style: oblique;
+                font-weight: 800;
+            }
+            #submit:hover{
+                background-color:rgb(47, 211, 233);
+            }
+            .container1{
+                width:1510px;
+                height:75px;
+                background: linear-gradient(45deg,red,orange,blue);
+                border-radius: 5px;
+            }
+            #heading{
+                margin-left:590px;
+                padding-top:0.9em;
+                font-size:26px;
+                color: black;
+            }
+            #container2{
+                width:490px;
+                height:390px;
+                background-color:white;
+                margin-top:350px;
+                margin-left:33em;    
+            }
+           #c2name,#c2no,#c2eml,#c2ads{
+                padding-top:2em;
+                font-size:22px;
+                padding-left:1.5em;
+            }
+            #c2no{
+                margin-top:-1em;
+            }
+            #c2eml{
+                margin-top:-1em;
+            }
+            #c2ads{
+                margin-top:-1.2em;
+            }
+            li{
+                margin-left:10.2em;
+                list-style:none;
+                font-size:23px;
+                margin-top:-15.5em;
+                padding-top:2em;
+             }
+            #li2{
+                list-style:none;
+                margin-left:10.2em;
+                margin-top:0.49em;
+             }
+            #li3{
+                list-style:none;
+                margin-left:10.2em;
+                margin-top:0.5em;
+            }
+            #li4{
+                list-style:none;
+                margin-left:10.2em;
+                margin-top:0.2em;
+            }
+        </style>
+        <script>
+            function sub(){
+            var fname=document.getElementById("userinput").value;
+            var mbno=document.getElementById("mobileinput").value;
+            var eml=document.getElementById("emailinput").value;
+            var adr=document.getElementById("adressinput").value;
+            var division=document.getElementById("container2");
+            var innerdiv5=document.createElement("h5");
+            innerdiv5.innerHTML="Name";
+            division.append(innerdiv5);
+            innerdiv5.id="c2name";
+
+            var innerdiv6=document.createElement("h5");
+            innerdiv6.innerHTML="Mobile No";
+            division.append(innerdiv6);
+            innerdiv6.id="c2no";
+
+            var innerdiv7=document.createElement("h5");
+            innerdiv7.innerHTML="Email";
+            division.append(innerdiv7);
+            innerdiv7.id="c2eml";
+
+            var innerdiv8=document.createElement("h5");
+            innerdiv8.innerHTML="Address";
+            division.append(innerdiv8);
+            innerdiv8.id="c2ads";
+            var innerdiv=document.createElement("li");
+            innerdiv.innerHTML= fname;
+            division.appendChild(innerdiv);
+            var innerdiv2=document.createElement("li");
+            innerdiv2.innerHTML=mbno;
+            division.appendChild(innerdiv2);
+            innerdiv2.id="li2";
+            var innerdiv3=document.createElement("li");
+            innerdiv3.innerHTML= eml;
+            division.appendChild(innerdiv3);
+            innerdiv3.id="li3";
+            var innerdiv4=document.createElement("li");
+            innerdiv4.innerHTML=adr;
+            division.appendChild(innerdiv4);
+            innerdiv4.id="li4";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container1">
+            <h3 id="heading">Student Registration Form</h3>
+        </div>
+        <div class="container">
+            <p id="fullname">Name</p><input type=" text" placeholder="  Enter Username"  id="userinput" required>
+            <p id="mobileno">Mobile No</p><input type="mobile number" placeholder="  Enter Mobile number" required id="mobileinput">
+            <p id="email">Email</p><input type="email" placeholder="  Enter E-mail" required id="emailinput">
+            <p id="adress">Address</p><input type="text" placeholder="  Enter your adress" required id="adressinput">
+            <button id="submit" onclick="sub()">submit</button>
+        </div>
+        <div id="container3">
+        <div id="container2">
+            <h5 id="h55"></h5>
+            <ul id="uls"></ul>
+        </div>
+        </div>
+    </body>
+</html>
